@@ -1,0 +1,91 @@
+body {
+  font: 12px sans-serif;
+}
+
+.yaxis path,
+.xaxis path,
+.xaxis line,
+.yaxis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+  pointer-events all;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 0.7px;
+  pointer-events: stroke;
+}
+
+.line:hover {
+  stroke-width: 1px;
+}
+
+.legend{
+  display: none;
+  stroke-width: 0.2px;
+}
+
+.tsseries:hover ~ .legend{
+  display: inherit;
+}
+
+#mCircle {
+  display: none;
+}
+
+.overlay {
+  fill: none;
+  pointer-events: all;
+}
+
+.hoverbox {
+  fill: grey;
+  fill-opacity: 20%;
+}
+
+rect:hover {
+  fill-opacity: 40%;
+}
+
+.left {
+    position:absolute;
+    left:0; top:65px; bottom: 0;
+    width: 200px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.main {
+    position: absolute;
+    left:220px; top:65px; right:0; bottom:0;
+    padding-right: 20px;
+}
+
+.panel-heading .accordion-toggle:after {
+    /* symbol for "opening" panels */
+    font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
+    content: "\e114";    /* adjust as needed, taken from bootstrap.css */
+    float: right;        /* adjust as needed */
+    color: grey;         /* adjust as needed */
+}
+.panel-heading .accordion-toggle.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\e080";    /* adjust as needed, taken from bootstrap.css */
+}
+.badge {
+  float: right;
+}
+.btn-group-justified {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+#filedrop {
+  padding-top: 15px;
+  padding-left: 8px;
+}
